@@ -1,40 +1,38 @@
-name: Proponer una idea (feature request)
-description: Sugiere una función nueva o una mejora para BC Agentic Hub.
+name: Suggest an idea
+description: Propose a new feature or an improvement for BC Agentic Hub.
 title: "[Idea]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Antes de seguir, busca en los [issues](https://github.com/nemesis312/bc-agentic-hub-releases/issues) por si alguien ya propuso algo parecido. Si existe, deja tu caso como comentario allí.
-
-        Puedes escribir en español o en inglés (Spanish or English is fine).
+        First, search the [issues](https://github.com/nemesis312/bc-agentic-hub-releases/issues) in case someone already proposed something similar. If it's there, add your case as a comment.
   - type: textarea
     id: problem
     attributes:
-      label: Qué problema resuelve (problem)
-      description: Cuéntanos qué intentas hacer hoy y qué te lo hace difícil.
-      placeholder: "Cuando manejo skills en varios proyectos, tengo que ..."
+      label: Problem
+      description: Tell us what you're trying to do today and what makes it hard.
+      placeholder: "When I manage skills across several projects, I have to ..."
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Qué propones (proposal)
-      description: Cómo te gustaría que funcionara en la app.
+      label: Proposal
+      description: How you'd like it to work in the app.
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternativas o cómo lo resuelves hoy (opcional)
+      label: Alternatives or current workaround (optional)
     validations:
       required: false
   - type: input
     id: app-version
     attributes:
-      label: Versión de la app (opcional)
-      description: Está en la ventana About de BC Agentic Hub.
+      label: App version (optional)
+      description: It's in BC Agentic Hub's About window.
       placeholder: "0.4.1"
     validations:
       required: false
