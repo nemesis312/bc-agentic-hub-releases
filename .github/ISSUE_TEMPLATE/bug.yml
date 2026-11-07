@@ -1,0 +1,67 @@
+name: Reportar un error (bug)
+description: Algo no funciona como debería en BC Agentic Hub.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportarlo. Antes de seguir, busca en los [issues abiertos](https://github.com/nemesis312/bc-agentic-hub-releases/issues) por si ya alguien lo reportó. Si ya existe, deja tu caso como comentario allí.
+
+        Puedes escribir en español o en inglés (Spanish or English is fine).
+  - type: input
+    id: app-version
+    attributes:
+      label: Versión de la app (app version)
+      description: Está en la ventana About de BC Agentic Hub (menú BC Agentic Hub > About).
+      placeholder: "0.4.1"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: Versión de macOS (macOS version)
+      description: Menú Apple > Acerca de esta Mac. Indica también si es Apple Silicon o Intel.
+      placeholder: "macOS 15.1, Apple Silicon"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Cómo reproducirlo (steps to reproduce)
+      description: Los pasos exactos para que el error ocurra.
+      placeholder: |
+        1. Agrega como fuente el repo ...
+        2. Instala la skill ... en un proyecto
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Qué esperabas (expected)
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Qué pasó (actual)
+      description: Incluye el mensaje de error si salió alguno. Puedes pegar capturas de pantalla.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Repo de origen o skill involucrada (opcional)
+      description: Si el error tiene que ver con una fuente, skill, agente o plugin en particular, indica cuál.
+      placeholder: "github.com/usuario/repo, skill mi-skill"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (opcional)
+      description: Salida de terminal o logs relevantes. Revisa que no incluyan tokens, claves ni datos privados.
+      render: shell
+    validations:
+      required: false

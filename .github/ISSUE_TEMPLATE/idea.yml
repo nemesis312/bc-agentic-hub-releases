@@ -1,0 +1,40 @@
+name: Proponer una idea (feature request)
+description: Sugiere una función nueva o una mejora para BC Agentic Hub.
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de seguir, busca en los [issues](https://github.com/nemesis312/bc-agentic-hub-releases/issues) por si alguien ya propuso algo parecido. Si existe, deja tu caso como comentario allí.
+
+        Puedes escribir en español o en inglés (Spanish or English is fine).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qué problema resuelve (problem)
+      description: Cuéntanos qué intentas hacer hoy y qué te lo hace difícil.
+      placeholder: "Cuando manejo skills en varios proyectos, tengo que ..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Qué propones (proposal)
+      description: Cómo te gustaría que funcionara en la app.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas o cómo lo resuelves hoy (opcional)
+    validations:
+      required: false
+  - type: input
+    id: app-version
+    attributes:
+      label: Versión de la app (opcional)
+      description: Está en la ventana About de BC Agentic Hub.
+      placeholder: "0.4.1"
+    validations:
+      required: false
