@@ -12,8 +12,8 @@ Website: https://agentichub.boricuacoder.dev · Made by [BoricuaCoder](https://b
 
 This repo only hosts release builds; the source code is not published here.
 
-## Reportar un problema
+## Reporting issues
 
-¿Encontraste un error o tienes una idea? [Abre un issue aquí](https://github.com/nemesis312/bc-agentic-hub-releases/issues/new/choose) (report a bug or request a feature).
+Found a bug or have an idea? [Open an issue](https://github.com/nemesis312/bc-agentic-hub-releases/issues/new/choose).
 
-Antes de abrirlo, busca en los [issues existentes](https://github.com/nemesis312/bc-agentic-hub-releases/issues) por si ya está reportado. Si es un error, incluye la versión de la app (ventana About), tu versión de macOS y los pasos para reproducirlo.
+Search the [existing issues](https://github.com/nemesis312/bc-agentic-hub-releases/issues) first in case it's already reported. For a bug, include the app version (About window), your macOS version and the steps to reproduce it. Reports in English or Spanish are welcome.
